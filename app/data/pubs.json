@@ -6,7 +6,9 @@
       "location": "Birkenhead",
       "lat": 53.3867,
       "lng": -3.0186,
-      "description": "Historic military-themed pub from the 1820s with a barber shop inside. Irish-owned establishment known for traditional atmosphere and real ale."
+      "description": "Historic military-themed pub from the 1820s with a barber shop inside. Irish-owned establishment known for traditional atmosphere and real ale.",
+      "real_ales_available": 4,
+      "review_rating": 8.5
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "location": "Bromborough",
       "lat": 53.3545,
       "lng": -3.0436,
-      "description": "Award-winning micro pub celebrating locally produced cask and craft ale. First opened on New Brighton's Victoria Road, now with multiple locations across Merseyside."
+      "description": "Award-winning micro pub celebrating locally produced cask and craft ale. First opened on New Brighton's Victoria Road, now with multiple locations across Merseyside.",
+      "real_ales_available": 8,
+      "review_rating": 9.2
     },
     {
       "id": 3,
@@ -22,7 +26,9 @@
       "location": "Crosby",
       "lat": 53.4778,
       "lng": -3.0275,
-      "description": "Old school pub on College Road with Canadian maple flooring, low lighting and a welcoming bookcase. Opened October 2023 and quickly became a local favourite."
+      "description": "Old school pub on College Road with Canadian maple flooring, low lighting and a welcoming bookcase. Opened October 2023 and quickly became a local favourite.",
+      "real_ales_available": 5,
+      "review_rating": 8.8
     },
     {
       "id": 4,
@@ -30,7 +36,9 @@
       "location": "Freshfield",
       "lat": 53.5403,
       "lng": -3.0753,
-      "description": "Compact pub near Freshfield station on Victoria Road in Formby. Known for quality real ale selection in an intimate setting."
+      "description": "Compact pub near Freshfield station on Victoria Road in Formby. Known for quality real ale selection in an intimate setting.",
+      "real_ales_available": 6,
+      "review_rating": 8.9
     },
     {
       "id": 5,
@@ -38,7 +46,9 @@
       "location": "Liverpool City Centre",
       "lat": 53.4084,
       "lng": -2.9613,
-      "description": "Historic Victorian pub in Liverpool's city centre, known for its ornate interior and classic real ale selection."
+      "description": "Historic Victorian pub in Liverpool's city centre, known for its ornate interior and classic real ale selection.",
+      "real_ales_available": 7,
+      "review_rating": 9.0
     },
     {
       "id": 6,
@@ -46,7 +56,9 @@
       "location": "Liverpool City Centre",
       "lat": 53.4041,
       "lng": -2.9726,
-      "description": "Traditional pub with nautical heritage, serving quality real ales and local beers in a welcoming atmosphere."
+      "description": "Traditional pub with nautical heritage, serving quality real ales and local beers in a welcoming atmosphere.",
+      "real_ales_available": 5,
+      "review_rating": 8.4
     },
     {
       "id": 7,
@@ -54,7 +66,9 @@
       "location": "Liverpool City Centre",
       "lat": 53.4105,
       "lng": -2.9708,
-      "description": "Grade II listed Georgian building housing a distinctive pub with character and an excellent selection of real ales."
+      "description": "Grade II listed Georgian building housing a distinctive pub with character and an excellent selection of real ales.",
+      "real_ales_available": 8,
+      "review_rating": 9.1
     },
     {
       "id": 8,
@@ -62,7 +76,9 @@
       "location": "New Ferry",
       "lat": 53.3633,
       "lng": -3.0305,
-      "description": "Waterfront pub with views and a selection of quality real ales. Popular meeting spot for locals and visitors alike."
+      "description": "Waterfront pub with views and a selection of quality real ales. Popular meeting spot for locals and visitors alike.",
+      "real_ales_available": 6,
+      "review_rating": 8.6
     },
     {
       "id": 9,
@@ -70,7 +86,9 @@
       "location": "Newton-le-Willows",
       "lat": 53.4511,
       "lng": -2.6177,
-      "description": "Community pub off the beaten track, offering genuine local hospitality and a fine selection of real ales."
+      "description": "Community pub off the beaten track, offering genuine local hospitality and a fine selection of real ales.",
+      "real_ales_available": 4,
+      "review_rating": 8.2
     },
     {
       "id": 10,
@@ -78,7 +96,9 @@
       "location": "Bebington",
       "lat": 53.3534,
       "lng": -3.0636,
-      "description": "Traditional community pub serving the Bebington area with quality real ales and a warm welcome."
+      "description": "Traditional community pub serving the Bebington area with quality real ales and a warm welcome.",
+      "real_ales_available": 5,
+      "review_rating": 8.3
     }
   ]
 }
