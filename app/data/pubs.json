@@ -1,0 +1,84 @@
+{
+  "pubs": [
+    {
+      "id": 1,
+      "name": "Gallagher's Traditional Pub",
+      "location": "Birkenhead",
+      "lat": 53.3867,
+      "lng": -3.0186,
+      "description": "Historic military-themed pub from the 1820s with a barber shop inside. Irish-owned establishment known for traditional atmosphere and real ale."
+    },
+    {
+      "id": 2,
+      "name": "Bow-Legged Beagle",
+      "location": "Bromborough",
+      "lat": 53.3545,
+      "lng": -3.0436,
+      "description": "Award-winning micro pub celebrating locally produced cask and craft ale. First opened on New Brighton's Victoria Road, now with multiple locations across Merseyside."
+    },
+    {
+      "id": 3,
+      "name": "The Coop",
+      "location": "Crosby",
+      "lat": 53.4778,
+      "lng": -3.0275,
+      "description": "Old school pub on College Road with Canadian maple flooring, low lighting and a welcoming bookcase. Opened October 2023 and quickly became a local favourite."
+    },
+    {
+      "id": 4,
+      "name": "Beer Station",
+      "location": "Freshfield",
+      "lat": 53.5403,
+      "lng": -3.0753,
+      "description": "Compact pub near Freshfield station on Victoria Road in Formby. Known for quality real ale selection in an intimate setting."
+    },
+    {
+      "id": 5,
+      "name": "The Philharmonic Dining Rooms",
+      "location": "Liverpool City Centre",
+      "lat": 53.4084,
+      "lng": -2.9613,
+      "description": "Historic Victorian pub in Liverpool's city centre, known for its ornate interior and classic real ale selection."
+    },
+    {
+      "id": 6,
+      "name": "The White Star Pub",
+      "location": "Liverpool City Centre",
+      "lat": 53.4041,
+      "lng": -2.9726,
+      "description": "Traditional pub with nautical heritage, serving quality real ales and local beers in a welcoming atmosphere."
+    },
+    {
+      "id": 7,
+      "name": "The Athenaeum",
+      "location": "Liverpool City Centre",
+      "lat": 53.4105,
+      "lng": -2.9708,
+      "description": "Grade II listed Georgian building housing a distinctive pub with character and an excellent selection of real ales."
+    },
+    {
+      "id": 8,
+      "name": "The Grapes",
+      "location": "New Ferry",
+      "lat": 53.3633,
+      "lng": -3.0305,
+      "description": "Waterfront pub with views and a selection of quality real ales. Popular meeting spot for locals and visitors alike."
+    },
+    {
+      "id": 9,
+      "name": "The Gate Inn",
+      "location": "Newton-le-Willows",
+      "lat": 53.4511,
+      "lng": -2.6177,
+      "description": "Community pub off the beaten track, offering genuine local hospitality and a fine selection of real ales."
+    },
+    {
+      "id": 10,
+      "name": "The Beehive",
+      "location": "Bebington",
+      "lat": 53.3534,
+      "lng": -3.0636,
+      "description": "Traditional community pub serving the Bebington area with quality real ales and a warm welcome."
+    }
+  ]
+}
