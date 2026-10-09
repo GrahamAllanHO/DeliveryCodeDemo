@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8
+pytest-playwright>=0.5
+# One-off browser install: python -m playwright install chromium

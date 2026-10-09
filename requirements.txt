@@ -1,1 +1,2 @@
 # Python dependencies
+flask>=3.0
