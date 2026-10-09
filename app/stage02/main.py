@@ -10,7 +10,7 @@ import json
 # format "<Label>: <value>", where the label is the property key with underscores
 # replaced by spaces and each word capitalised (e.g. "Real Ales Available: 4").
 def main():
- 
+    print("Pub Data") 
 
 
 if __name__ == "__main__":
