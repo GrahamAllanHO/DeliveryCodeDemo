@@ -1,0 +1,114 @@
+GITHUB COPILOT DEMO OUTLINE – MERSEYSIDE REAL ALE PUBS
+=======================================================
+
+Story: start with an empty script that prints pub data, and end with a tested,
+Flask-based interactive map built and maintained with Copilot. Each step is
+one plain-English prompt.
+
+Setup: run everything from the repo root. Python 3 is installed.
+       Restart the server after each code change. Stop it with Ctrl+C.
+       In Codespaces, open the forwarded port 8000.
+       Data: app/data/pubs.csv and app/data/pubs.json (10 Merseyside pubs).
+
+
+STAGE 1 – CSV to terminal (Copilot from a comment)         app/stage01/main.py
+-------------------------------------------------------------------------------
+Goal: show Copilot writing code from a comment alone.
+  Step 1. Open main.py. It has a comment describing the task and a stub that
+          prints only "Pub Data".
+  Step 2. Let Copilot complete the function from the comment: read pubs.csv,
+          print a title, then a coloured, tab-separated table with aligned
+          columns.
+  Step 3. Run:  python -m app.stage01.main
+  Say: "I described it in a comment and Copilot wrote the code."
+
+
+STAGE 2 – JSON to terminal                                 app/stage02/main.py
+-------------------------------------------------------------------------------
+Goal: same idea with a different format and more detailed instructions.
+  Step 1. Open main.py and read the comment: use the json module, print each
+          pub name, then each property as "<Label>: <value>" (tab-indented,
+          underscores to spaces, capitalised words). Skip id, lat and lng.
+  Step 2. Let Copilot complete it.
+  Step 3. Run:  python -m app.stage02.main
+  Say: "The more precise the comment, the closer the first result."
+
+
+STAGE 3 – From script to interactive map (Copilot chat)    app/stage03/
+-------------------------------------------------------------------------------
+Goal: evolve the script into a map web page, one prompt at a time.
+Guides: app/stage03/step01..step06 .md
+  Step 1. Baseline: run the CLI script and show lat/lng in pubs.json.
+          Run: python -m app.stage03.main
+  Step 2. Web page. Prompt: "Show the output in a web page." Standard-library
+          http.server, one card per pub. Open http://127.0.0.1:8000.
+  Step 3. Leaflet map with hover descriptions (CDN, OpenStreetMap tiles).
+  Step 4. Troubleshoot "Access blocked" tiles. Fix: referrer policy; fallback
+          is another tile provider such as CARTO.
+  Step 5. Property-list tooltip and a map-only page (data-driven labels).
+  Step 6. Pint-glass SVG icons: colour = rating, size = number of real ales.
+  Wrap-up: CLI, web page, map, troubleshooting, tooltip, data-driven icons.
+
+
+STAGE 4 – Finished map (reference solution)                app/stage04/main.py
+-------------------------------------------------------------------------------
+Goal: the end result of stage 3, as a fallback if a live step goes wrong.
+  Step 1. Run:  python app/stage04/main.py   (serves on port 8000)
+  Step 2. Show the map, hover tooltips and pint icons.
+  Note: no step guides for this stage.
+
+
+STAGE 5 – Improve, test, refactor, productionise           app/stage05/
+-------------------------------------------------------------------------------
+Goal: take a working app further, the way a real project evolves.
+Guides: app/stage05/step01..step08 .md
+  Step 1. Baseline: single-file app (server + HTML/CSS + JS).
+          Run: python -m app.stage05.main
+  Step 2. Ask Copilot for UI improvement ideas (no code written).
+  Step 3. Implement title bar, legend, filters and click popups
+          ("Can you implement (1, 2, 3 and 5)?").
+  Step 4. Add pytest tests following best practice (tests/stage05, fixtures,
+          real server on a free port). Run: python -m pytest -v
+  Step 5. Add Playwright browser tests.
+          pip install -r requirements-dev.txt
+          python -m playwright install chromium
+          Run: python -m pytest   (30 tests)
+  Step 6. Refactor: ask how to structure it, then "Go ahead". Modules:
+          server.py, data.py, static/ (html, css, js). Data is served from
+          /api/pubs. Tests prove behaviour is unchanged (40 tests).
+  Step 7. Productionise: ask what is needed, then "Rewrite the server to use
+          Flask". Host and port come from HOST and PORT environment variables.
+          Production: gunicorn "app.stage05.server:create_app()".
+  Step 8. Troubleshoot tooltips running off screen. Two prompts: first fix is
+          partial, then "The Gate Inn is still off the screen." Adds
+          tooltip.js and a regression test (43 tests).
+  Wrap-up: baseline, ideas, features, unit tests, browser tests, refactor,
+           Flask, bug fix.
+  Optional follow-ups: search box, pub list sidebar, Docker, CI/CD, database.
+
+
+STAGE 6 – Copilot on GitHub (cloud agent)                  app/stage06/
+-------------------------------------------------------------------------------
+Goal: show how GitHub works with Copilot. No application code changes.
+Guide: app/stage06/step01_github_agents.md
+  Step 1. Set up Copilot agents:
+          a. Settings > Copilot: confirm the cloud agent is enabled.
+          b. Add .github/copilot-instructions.md (project conventions).
+          c. Add .github/workflows/copilot-setup-steps.yml (job named
+             copilot-setup-steps: checkout, set up Python, pip install).
+          d. Create an issue, e.g. "Add a filter by rating to the map".
+          e. Assign the issue to Copilot and watch the session log.
+          f. Review the pull request, leave a comment, merge.
+  Step 2. (Planned, not yet written) Run tests automatically with GitHub
+          Actions.
+
+
+PRE-DEMO CHECKLIST
+-------------------------------------------------------------------------------
+  [ ] Python works: python --version
+  [ ] Dependencies installed: pip install -r requirements.txt
+  [ ] Stage 5 starts as a single main.py: tests/, requirements-dev.txt, modules
+      and Flask do not exist yet. Copilot creates them live during the steps
+  [ ] Port 8000 is free (stop any earlier server)
+  [ ] Stage 6 files (.github/...) are not in the repo yet; create them live
+  [ ] Fallback: stage 4 is a working map if a live step goes wrong
